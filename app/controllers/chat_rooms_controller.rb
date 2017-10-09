@@ -6,6 +6,7 @@ class ChatRoomsController < ActionController
   def show
     # includes basically = more efficient join
     @chat_room = ChatRoom.includes(:messages).find_by(id: params[id])
+    @message = Message.new
   end
 
   def new
