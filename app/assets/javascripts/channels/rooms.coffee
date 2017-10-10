@@ -33,5 +33,5 @@ if $('#messages').length > 0
       if $.trim(textarea.val()).length > 0
         App.global_chat.send_message textarea.val(), messages.data('chat-room-id')
         textarea.val('')
-        e.preventDefault()
-        return false
+      e.preventDefault()
+      return false
