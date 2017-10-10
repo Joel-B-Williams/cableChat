@@ -10,6 +10,6 @@ class MessageBroadcastJob < ApplicationJob
 
     #renders _message partial with help from message controller (created just for this)
     def render_message(message)
-      MessagesController.render partial: 'mesages/message', locals: {message: message}
+      MessagesController.render partial: 'messages/message', locals: {message: message}
     end
 end
