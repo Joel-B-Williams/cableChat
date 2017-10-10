@@ -1,4 +1,4 @@
-class ChatRoomsChannel > Applicationable::ChatRoomsChannel
+class ChatRoomsChannel > ApplicationCable::ChatRoomsChannel
   def subscribed
     stream_from "chat_rooms_#{params['chat_room_id']}_channel"
   end
