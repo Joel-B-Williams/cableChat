@@ -6,9 +6,9 @@
 
 <%= form_for @message, url: '#' do |f| %>
   <div class="form-group">
-    <%= f.label :Message %>
+    <%= f.label :Body %>
     <%= f.text_area :body, class: 'form-control' %>
-    <small class="text-muted">From 2 to 1000 characters</small>
+    <small class="text-muted">From 1 to 1000 characters</small>
   </div>
 
   <%= f.submit "Post", class: 'btn btn-primary btn-lg' %>
