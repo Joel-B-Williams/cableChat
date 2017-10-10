@@ -4,6 +4,6 @@ Rails.application.routes.draw do
   mount ActionCable.server => '/cable'
 
   resources :chat_rooms, only: [:new, :create, :show, :index]
-  resources :user, path_names: { new: sign_in, create: create}
+  resources :user, path_names: { new: 'sign_in'}
   root 'chat_rooms#index'
 end
